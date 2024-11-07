@@ -37,10 +37,10 @@ void ofApp::setup(){
 }
 
 // Result:
-[notice ] ofApp: res->status = 200
-[notice ] ofApp: res->body = {
-  "origin": "xxx.xxx.xxx.xxx"
-}
+// [notice ] ofApp: res->status = 200
+// [notice ] ofApp: res->body = {
+//   "origin": "xxx.xxx.xxx.xxx"
+// }
 ```
 
 ## LICENSE
