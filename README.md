@@ -5,6 +5,7 @@
 ## Notes
 
 - openssl is not included in this lib
+  - you can use [ofxOpenSSL3](https://github.com/funatsufumiya/ofxOpenSSL3) if you need, and SSL http example is also in it.
   - ofxPoco has openssl lib in it, but openssl version is lower than 3.0.0, so it won't work with this lib
 
 ## Usage
