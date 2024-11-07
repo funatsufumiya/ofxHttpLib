@@ -19,7 +19,7 @@ void ofApp::setup(){
 		ofLogNotice("ofApp") << "res->status = " << res->status;
 		ofLogNotice("ofApp") << "res->body = " << res->body;
 	} else {
-        ofLogError("ofApp") << "error: " << res.error();
+		ofLogError("ofApp") << "error: " << res.error();
 	}
 }
 
