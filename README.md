@@ -5,6 +5,7 @@
 ## Notes
 
 - openssl is not included in this lib
+  - ofxPoco has openssl lib in it, but openssl version is lower than 3.0.0, so it won't work with this lib
 
 ## Usage
 
@@ -14,7 +15,7 @@ See [example_http_client](example_http_client). (NOTE: Please use `projectGenera
 #include "ofApp.h"
 
 // need this to SSL support, however, openssl is not included in this lib
-// if you really need, you have to config openssl lib by yourself
+// if you really need, you have to config openssl (>= 3.0.0) lib by yourself
 //#define CPPHTTPLIB_OPENSSL_SUPPORT
 
 #include "httplib.h"
