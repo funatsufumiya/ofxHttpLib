@@ -18,6 +18,9 @@ See [example_http_client](example_http_client). (NOTE: Please use `projectGenera
 // if you really need, you have to config openssl (>= 3.0.0) lib by yourself
 //#define CPPHTTPLIB_OPENSSL_SUPPORT
 
+// also need this for windows ofxOpenSSL3
+//#define USE_OPENSSL3_INSTEAD_OF_OPENSSL_WIN 1
+
 #include "httplib.h"
 
 //--------------------------------------------------------------

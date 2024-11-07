@@ -281,12 +281,25 @@ using socket_t = int;
 #endif // TARGET_OS_OSX
 #endif // _WIN32
 
+#if defined(_WIN32) && defined(USE_OPENSSL3_INSTEAD_OF_OPENSSL_WIN)
+
+#include <openssl3/err.h>
+#include <openssl3/evp.h>
+#include <openssl3/ssl.h>
+#include <openssl3/x509v3.h>
+
+#else
+
 #include <openssl/err.h>
 #include <openssl/evp.h>
 #include <openssl/ssl.h>
 #include <openssl/x509v3.h>
 
-#if defined(_WIN32) && defined(OPENSSL_USE_APPLINK)
+#endif
+
+#if defined(_WIN32) && defined(OPENSSL_USE_APPLINK) && defined(USE_OPENSSL3_INSTEAD_OF_OPENSSL_WIN)
+#include <openssl3/applink.c>
+#elif defined(_WIN32) && defined(OPENSSL_USE_APPLINK) 
 #include <openssl/applink.c>
 #endif
 
